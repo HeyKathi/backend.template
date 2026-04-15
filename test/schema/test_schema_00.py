@@ -1,4 +1,4 @@
-from BACKEND_NAME_PLACEHOLDER.schema import EntityBase, EntityFull
+from FastAPI_TicTacToe_Game_REST_API_Development_Project.schema import EntityBase, EntityFull
 
 
 def test_entity_00():

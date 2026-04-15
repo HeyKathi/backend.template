@@ -1,4 +1,4 @@
-from BACKEND_NAME_PLACEHOLDER.model import Entity, Person, User
+from FastAPI_TicTacToe_Game_REST_API_Development_Project.model import Entity, Person, User
 
 ENTITY_ID = 1
 ENTITY_NAME = "Entity 1"

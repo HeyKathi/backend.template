@@ -1,6 +1,6 @@
-from BACKEND_NAME_PLACEHOLDER.crud import Crud
-from BACKEND_NAME_PLACEHOLDER.engine import get_engine
-from BACKEND_NAME_PLACEHOLDER.schema import EntityBase
+from FastAPI_TicTacToe_Game_REST_API_Development_Project.crud import Crud
+from FastAPI_TicTacToe_Game_REST_API_Development_Project.engine.database import get_engine
+from FastAPI_TicTacToe_Game_REST_API_Development_Project.schema import EntityBase
 
 
 def test_crud_00():
