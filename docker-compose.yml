@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   db:
     image: postgres:15
@@ -11,7 +9,7 @@ services:
       - "5432:5432"
 
   api:
-    build: ./FastAPI_TicTacToe_Game_REST_API_Development_Project
+    build: .
     depends_on:
       - db
     environment:
