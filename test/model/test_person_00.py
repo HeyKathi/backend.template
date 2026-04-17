@@ -1,4 +1,4 @@
-from FastAPI_TicTacToe_Game_REST_API_Development_Project.model import Person
+from model import Person
 
 TEST_ID_01 = 1
 TEST_FIRST_NAME_01 = "John"

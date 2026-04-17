@@ -11,7 +11,7 @@ services:
       - "5432:5432"
 
   api:
-    build: .
+    build: ./FastAPI_TicTacToe_Game_REST_API_Development_Project
     depends_on:
       - db
     environment:
