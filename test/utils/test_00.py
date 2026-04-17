@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from BACKEND_NAME_PLACEHOLDER import utils
+from FastAPI_TicTacToe_Game_REST_API_Development_Project import utils
 
 
 def test_00(capfd: pytest.CaptureFixture[str]) -> None:

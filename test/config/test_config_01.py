@@ -1,6 +1,6 @@
 import os
 
-from BACKEND_NAME_PLACEHOLDER.config import Config
+from FastAPI_TicTacToe_Game_REST_API_Development_Project.config import Config
 
 
 def test_config_load_file_01():
