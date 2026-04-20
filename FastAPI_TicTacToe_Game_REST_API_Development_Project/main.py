@@ -20,7 +20,7 @@ def read_root():
     return {"message": "Hello FastAPI!"}
 
 @app.put("/text")
-def store_text(text: str):
+def stored_text(text: str):
     global stored_text
     stored_text = text
     return {"status": "ok"}
