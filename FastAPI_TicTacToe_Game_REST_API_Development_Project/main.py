@@ -1,7 +1,7 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 
-from .api._routes import router
-from .engine.database import Base, engine
+from .api._routes import router, game_detail, get_game, get_games
+from .engine.database import Base, engine, SessionLocal
 
 app = FastAPI(
     title="TicTacToe API",
@@ -19,12 +19,3 @@ app.include_router(router)
 def read_root():
     return {"message": "Hello FastAPI!"}
 
-@app.put("/text")
-def stored_text(text: str):
-    global stored_text
-    stored_text = text
-    return {"status": "ok"}
-
-@app.get("/text")
-def get_text():
-    return {"stored_text": stored_text}

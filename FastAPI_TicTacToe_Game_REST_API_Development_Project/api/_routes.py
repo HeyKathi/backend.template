@@ -18,7 +18,7 @@ def create_new_game(db: Session = Depends(get_db)):
     return create_game(db)
 
 
-@router.get("/games")
+@router.get("/allgames")
 def list_games(db: Session = Depends(get_db)):
 
     return get_games(db)
