@@ -1,24 +1,30 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+from .api._routes import router
+from .engine.database import Base, engine
 
-# Variable to store text
-stored_text = ""
+app = FastAPI(
+    title="TicTacToe API",
+    version="1.0"
+)
+
+# DB Tabellen erstellen
+Base.metadata.create_all(bind=engine)
+
+# Router einbinden
+app.include_router(router)
+
 
 @app.get("/")
 def read_root():
     return {"message": "Hello FastAPI!"}
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: str | None = None):
-    return {"item_id": item_id, "query": q}
-
 @app.put("/text")
 def store_text(text: str):
     global stored_text
     stored_text = text
-    return "ok"
+    return {"status": "ok"}
 
 @app.get("/text")
 def get_text():
-    return stored_text
+    return {"stored_text": stored_text}
