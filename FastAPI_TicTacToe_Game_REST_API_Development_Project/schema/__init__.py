@@ -1,4 +1,4 @@
-from _entity import EntityBase, EntityFull
+from ._entity import EntityBase, EntityFull
 
 __all__ = [
     "EntityFull",
