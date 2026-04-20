@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-from engine.database import Base
+from ..engine.database import Base
 
 
 class Entity(Base):

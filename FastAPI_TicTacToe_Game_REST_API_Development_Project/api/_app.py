@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from ._routes import router
-from engine.database import Base, engine
+from ..engine.database import Base, engine
 
 
 def create_app():

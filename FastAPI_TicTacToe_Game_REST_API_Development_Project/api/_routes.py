@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from engine.database import get_db
-from crud._crud import (
+from ..engine.database import get_db
+from ..crud._crud import (
     create_game,
     get_games,
     get_game,

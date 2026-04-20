@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from model._entity import Entity
+from ..model._entity import Entity
 
 
 WIN = [
