@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from .api._routes import router, game_detail, get_game, get_games
 from .engine.database import Base, engine, SessionLocal
@@ -6,6 +7,14 @@ from .engine.database import Base, engine, SessionLocal
 app = FastAPI(
     title="TicTacToe API",
     version="1.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # DB Tabellen erstellen
