@@ -3,7 +3,7 @@ import sys
 
 from sqlalchemy.orm import Session
 
-from FastAPI_TicTacToe_Game_REST_API_Development_Project.backend.engine.database import get_engine
+from FastAPI_TicTacToe_Game_REST_API_Development_Project.backend.engine.database import get_db
 from FastAPI_TicTacToe_Game_REST_API_Development_Project.backend.model import Entity, Person, User
 
 
@@ -21,7 +21,7 @@ def user_main():
         print(
             f"config: {config_file_name} user_name: {user_name} password: {password_hash} name: {name} first_name: {first_name}"
         )
-        engine = get_engine(config_file_name)
+        engine = get_db(config_file_name)
         with Session(engine) as session:
             user = User()
             user.user_name = user_name
