@@ -1,5 +1,6 @@
-from FastAPI_TicTacToe_Game_REST_API_Development_Project import api, config, crud, model, schema, utils
-from FastAPI_TicTacToe_Game_REST_API_Development_Project.engine import database
+from FastAPI_TicTacToe_Game_REST_API_Development_Project.backend import utils
+from FastAPI_TicTacToe_Game_REST_API_Development_Project.backend import api, config, crud, model, schema
+from FastAPI_TicTacToe_Game_REST_API_Development_Project.backend.engine import database
 
 __all__ = [
     "api",

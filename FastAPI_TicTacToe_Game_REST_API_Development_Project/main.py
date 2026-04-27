@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from .api._routes import router, game_detail, get_game, get_games
-from .engine.database import Base, engine, SessionLocal
+from .backend.api._routes import router, game_detail, get_game, get_games
+from .backend.engine.database import Base, engine, SessionLocal
 
 app = FastAPI(
     title="TicTacToe API",
