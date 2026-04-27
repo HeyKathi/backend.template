@@ -2,8 +2,8 @@ function App() {
   return (
     <main className="app-shell">
       <header>
-        <h1>Frontend Exam – React Übungen</h1>
-        <p>Frontend und Backend sind in dieser Prüfung bewusst entkoppelt.</p>
+        <h1>TicTacToe online</h1>
+        <p>Spiele TicTacToe online!</p>
       </header>
       
     </main>

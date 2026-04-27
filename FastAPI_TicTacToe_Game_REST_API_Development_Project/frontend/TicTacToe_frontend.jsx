@@ -15,7 +15,7 @@ function TicTacToe_frontend() {
     }), [];
 
     const handleNewGameClick = () => {
-        fetch("http://127.0.0.1:8000/new-game", {
+        fetch("http://127.0.0.1:8000/games", {
             method: "POST"
         })
             .then(res => res.json())
