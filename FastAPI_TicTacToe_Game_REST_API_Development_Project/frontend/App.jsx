@@ -1,3 +1,5 @@
+import TicTacToe_frontend from "./TicTacToe_frontend";
+
 function App() {
   return (
     <main className="app-shell">
@@ -5,7 +7,7 @@ function App() {
         <h1>TicTacToe online</h1>
         <p>Spiele TicTacToe online!</p>
       </header>
-      
+      <TicTacToe_frontend />
     </main>
   );
 }
