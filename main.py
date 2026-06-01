@@ -1,7 +1,6 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from main import app
 from FastAPI_TicTacToe_Game_REST_API_Development_Project.backend.api._routes import router
 from FastAPI_TicTacToe_Game_REST_API_Development_Project.backend.engine.database import Base, engine, SessionLocal
 
