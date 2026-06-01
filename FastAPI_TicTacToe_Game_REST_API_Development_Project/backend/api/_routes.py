@@ -1,12 +1,16 @@
 from fastapi import APIRouter, Depends, HTTPException
+from fastapi.responses import StreamingResponse
 from sqlalchemy.orm import Session
+from io import BytesIO
+from datetime import datetime
 
 from ..engine.database import get_db
 from ..crud._crud import (
     create_game,
     get_games,
     get_game,
-    make_move
+    make_move,
+    export_games_to_xml
 )
 
 router = APIRouter()
@@ -42,3 +46,31 @@ def move(game_id: int, position: int, db: Session = Depends(get_db)):
         return make_move(db, game_id, position)
     except ValueError as e:
         raise HTTPException(400, str(e))
+
+
+@router.get("/export/xml")
+def export_xml(db: Session = Depends(get_db)):
+    """
+    Export all TicTacToe games as XML file.
+    
+    Returns:
+        XML file download
+    """
+    try:
+        xml_content = export_games_to_xml(db)
+        
+        # Create BytesIO object
+        xml_bytes = BytesIO(xml_content.encode('utf-8'))
+        
+        # Generate filename with timestamp
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        filename = f"tictactoe-export_{timestamp}.xml"
+        
+        # Return as file download
+        return StreamingResponse(
+            iter([xml_bytes.getvalue()]),
+            media_type="application/xml",
+            headers={"Content-Disposition": f"attachment; filename={filename}"}
+        )
+    except Exception as e:
+        raise HTTPException(500, f"Export failed: {str(e)}")
