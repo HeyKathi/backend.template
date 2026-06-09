@@ -115,6 +115,10 @@ def export_games_to_xml(db: Session):
         ET.SubElement(game_elem, 'current_player').text = game.current_player
         ET.SubElement(game_elem, 'status').text = game.status
         
+        # Add creation timestamp
+        if game.created_at:
+            ET.SubElement(game_elem, 'created_at').text = game.created_at.isoformat()
+        
         # Board visualization (3x3 grid)
         board_visual = ET.SubElement(game_elem, 'board_visualization')
         board_chars = list(game.board)
