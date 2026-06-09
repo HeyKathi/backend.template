@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from FastAPI_TicTacToe_Game_REST_API_Development_Project.main import app
+from main import app
 
 client = TestClient(app)
 
