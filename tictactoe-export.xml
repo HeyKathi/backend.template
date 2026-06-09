@@ -1,0 +1,124 @@
+<tictactoe_export timestamp="2026-06-01T14:57:50.345604" total_games="5">
+  <metadata>
+    <export_date>2026-06-01 14:57:50</export_date>
+    <application>TicTacToe REST API</application>
+    <version>1.0</version>
+  </metadata>
+  <games>
+    <game id="1">
+      <board>---------</board>
+      <current_player>X</current_player>
+      <status>ongoing</status>
+      <created_at>2026-06-01T14:57:50.345604</created_at>
+      <board_visualization>
+        <row number="1">
+          <cell position="1" column="1">-</cell>
+          <cell position="2" column="2">-</cell>
+          <cell position="3" column="3">-</cell>
+        </row>
+        <row number="2">
+          <cell position="4" column="1">-</cell>
+          <cell position="5" column="2">-</cell>
+          <cell position="6" column="3">-</cell>
+        </row>
+        <row number="3">
+          <cell position="7" column="1">-</cell>
+          <cell position="8" column="2">-</cell>
+          <cell position="9" column="3">-</cell>
+        </row>
+      </board_visualization>
+    </game>
+    <game id="2">
+      <board>---------</board>
+      <current_player>X</current_player>
+      <status>ongoing</status>
+      <created_at>2026-06-01T14:57:50.345604</created_at>
+      <board_visualization>
+        <row number="1">
+          <cell position="1" column="1">-</cell>
+          <cell position="2" column="2">-</cell>
+          <cell position="3" column="3">-</cell>
+        </row>
+        <row number="2">
+          <cell position="4" column="1">-</cell>
+          <cell position="5" column="2">-</cell>
+          <cell position="6" column="3">-</cell>
+        </row>
+        <row number="3">
+          <cell position="7" column="1">-</cell>
+          <cell position="8" column="2">-</cell>
+          <cell position="9" column="3">-</cell>
+        </row>
+      </board_visualization>
+    </game>
+    <game id="3">
+      <board>---------</board>
+      <current_player>X</current_player>
+      <status>ongoing</status>
+      <created_at>2026-06-01T14:57:50.345604</created_at>
+      <board_visualization>
+        <row number="1">
+          <cell position="1" column="1">-</cell>
+          <cell position="2" column="2">-</cell>
+          <cell position="3" column="3">-</cell>
+        </row>
+        <row number="2">
+          <cell position="4" column="1">-</cell>
+          <cell position="5" column="2">-</cell>
+          <cell position="6" column="3">-</cell>
+        </row>
+        <row number="3">
+          <cell position="7" column="1">-</cell>
+          <cell position="8" column="2">-</cell>
+          <cell position="9" column="3">-</cell>
+        </row>
+      </board_visualization>
+    </game>
+    <game id="4">
+      <board>---------</board>
+      <current_player>X</current_player>
+      <status>ongoing</status>
+      <created_at>2026-06-01T14:57:50.345604</created_at>
+      <board_visualization>
+        <row number="1">
+          <cell position="1" column="1">-</cell>
+          <cell position="2" column="2">-</cell>
+          <cell position="3" column="3">-</cell>
+        </row>
+        <row number="2">
+          <cell position="4" column="1">-</cell>
+          <cell position="5" column="2">-</cell>
+          <cell position="6" column="3">-</cell>
+        </row>
+        <row number="3">
+          <cell position="7" column="1">-</cell>
+          <cell position="8" column="2">-</cell>
+          <cell position="9" column="3">-</cell>
+        </row>
+      </board_visualization>
+    </game>
+    <game id="5">
+      <board>---------</board>
+      <current_player>X</current_player>
+      <status>ongoing</status>
+      <created_at>2026-06-01T14:57:50.345604</created_at>
+      <board_visualization>
+        <row number="1">
+          <cell position="1" column="1">-</cell>
+          <cell position="2" column="2">-</cell>
+          <cell position="3" column="3">-</cell>
+        </row>
+        <row number="2">
+          <cell position="4" column="1">-</cell>
+          <cell position="5" column="2">-</cell>
+          <cell position="6" column="3">-</cell>
+        </row>
+        <row number="3">
+          <cell position="7" column="1">-</cell>
+          <cell position="8" column="2">-</cell>
+          <cell position="9" column="3">-</cell>
+        </row>
+      </board_visualization>
+    </game>
+  </games>
+</tictactoe_export>
